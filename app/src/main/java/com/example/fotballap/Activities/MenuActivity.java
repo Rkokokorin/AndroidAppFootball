@@ -40,15 +40,15 @@ public class MenuActivity extends AppCompatActivity {
         //Обрабатываем щелчки на элементах ListView:
    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
          public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-//             Intent intent = new Intent();
+   Intent intent = new Intent();
 //
-//             switch (position) {
+      switch (position) {
 //                 case 0:
 //                     intent.setClass(MenuActivity.this, FindPlayerActivity.class);
 //                 case 1:
 //                     intent.setClass(MenuActivity.this, CreateTournamentActivity.class);
-//                 case 2:
-//                     intent.setClass(MenuActivity.this, RaitingActivity.class);
+         case 2:
+             intent.setClass(MenuActivity.this, RaitingActivity.class);
 //                 case 3:
 //                     intent.setClass(MenuActivity.this, AddPlayerActivity.class);
 //                 case 4:
@@ -58,8 +58,8 @@ public class MenuActivity extends AppCompatActivity {
 //                 case 6:
 //                     intent.setClass(MenuActivity.this, AboutActivity.class);
 //////                //запускаем  активность
-//                     startActivity(intent);
-//             }
+          startActivity(intent);
+            }
          }});
     }
 }

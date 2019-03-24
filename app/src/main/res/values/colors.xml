@@ -6,5 +6,5 @@
     <color name="white">#F5F5F5</color>
     <color name="black_overlay">#66000000</color>
     <color name="lightgreen">#00FA9A</color>
-    <color name="LimeGreen">#3CB371</color>
+    <color name="LimeGreen">#00FA9A</color>
 </resources>
