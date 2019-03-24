@@ -1,4 +1,4 @@
-package com.example.fotballap.activities.domain;
+package com.example.fotballap.activities.domain.persons;
 
-public class Administrator {
+public class Administrator extends Person {
 }

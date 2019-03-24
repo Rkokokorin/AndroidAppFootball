@@ -1,4 +1,7 @@
-package com.example.fotballap.activities.domain;
+package com.example.fotballap.activities.domain.persons;
 
-public class Person {
+public abstract class Person {
+    String name;
+    String surname;
+
 }
