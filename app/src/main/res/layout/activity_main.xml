@@ -4,67 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MainActivity">
-
-    <EditText
-        android:id="@+id/PasswordId"
-        android:layout_width="228dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="104dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@+id/LoginId"
-        app:layout_constraintTop_toBottomOf="@+id/LoginId" />
-
-    <EditText
-        android:id="@+id/LoginId"
-        android:layout_width="228dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="128dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/LoginButtonId"
-        android:layout_width="312dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="100dp"
-        android:text="Войти"
-        app:layout_constraintEnd_toEndOf="@+id/PasswordId"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="@+id/PasswordId"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordId"
-        android:onClick="onClickLogin"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="169dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="12dp"
-        android:text="Логин:"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/LoginId"
-        app:layout_constraintEnd_toEndOf="@+id/LoginId"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="@+id/LoginId" />
+    tools:context=".Activities.MainActivity"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="174dp"
-        android:layout_height="40dp"
+        android:layout_width="228dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/lightgreen"
         android:text="Пароль:"
         android:textAlignment="center"
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/PasswordId"
         app:layout_constraintEnd_toEndOf="@+id/PasswordId"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/PasswordId" />
+
+    <Button
+        android:id="@+id/LoginButtonId"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="312dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="8sp"
+        android:onClick="onClickLogin"
+        android:text="Войти"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordId"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/PasswordId"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="228dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/lightgreen"
+        android:text="Логин:"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/LoginId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoginId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/LoginId"
+        android:layout_width="228dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/lightgreen"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswordId"
+        android:layout_width="228dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/lightgreen"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/LoginId"
+        app:layout_constraintTop_toBottomOf="@+id/LoginId" />
 
 </android.support.constraint.ConstraintLayout>

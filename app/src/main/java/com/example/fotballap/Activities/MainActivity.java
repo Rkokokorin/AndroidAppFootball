@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     String password = "password";
     public void onClickLogin(View view) {
         if (login.equals(((EditText)findViewById(R.id.LoginId)).getText().toString())&&(password.equals(((EditText)findViewById(R.id.PasswordId)).getText().toString()))) {
-            Toast.makeText(this, "Аутинтификации пройдена", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Добро Пожаловать", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, MenuActivity.class);
             startActivity(intent);
         }
