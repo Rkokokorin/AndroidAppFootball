@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FotballAp</string>
+
+    <string name="title_activity_dsffds">dsffds</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_menu">Menu</string>
 </resources>

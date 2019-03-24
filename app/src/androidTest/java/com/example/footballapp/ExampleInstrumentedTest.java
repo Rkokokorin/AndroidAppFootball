@@ -1,4 +1,4 @@
-package com.example.fotballap;
+package com.example.footballapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

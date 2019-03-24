@@ -1,4 +1,5 @@
 package com.example.fotballap.Activities;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,8 +19,11 @@ public class MainActivity extends AppCompatActivity {
     String login = "login";
     String password = "password";
     public void onClickLogin(View view) {
-        if (login.equals(((EditText)findViewById(R.id.LoginId)).getText().toString())&&(password.equals(((EditText)findViewById(R.id.PasswordId)).getText().toString())))
-            Toast.makeText(this,"Аутинтификации пройдена", Toast.LENGTH_SHORT).show();
+        if (login.equals(((EditText)findViewById(R.id.LoginId)).getText().toString())&&(password.equals(((EditText)findViewById(R.id.PasswordId)).getText().toString()))) {
+            Toast.makeText(this, "Аутинтификации пройдена", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
+        }
         else Toast.makeText(this,"Ошибка аутинтификации", Toast.LENGTH_SHORT).show();
 
     }
