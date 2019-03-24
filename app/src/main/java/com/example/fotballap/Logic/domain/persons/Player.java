@@ -26,6 +26,7 @@ public class Player extends Person {
         position ="Неизвестна";
         name=this.name;
         surname = this.surname;
+        Persons.Players.add(this);
             }
       Player(String name, String surname, int goals,int games, int assists,int Red_cards, int Yellow_cards,String pos){
                 statistic.put("Goals",goals);
@@ -36,6 +37,9 @@ public class Player extends Person {
                 name=this.name;
                 surname = this.surname;
                 position =pos;
+                Raiting.goals.put(id,goals);
+                Raiting.goals.put(id,goals);
+                Persons.Players.add(this);
             }
 
 }
