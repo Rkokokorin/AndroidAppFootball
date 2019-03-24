@@ -18,7 +18,7 @@
 
     <EditText
         android:id="@+id/LoginId"
-        android:layout_width="226dp"
+        android:layout_width="228dp"
         android:layout_height="81dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="128dp"
@@ -36,7 +36,8 @@
         app:layout_constraintEnd_toEndOf="@+id/PasswordId"
         app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="@+id/PasswordId"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordId" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordId"
+        android:onClick="onClickLogin"/>
 
     <TextView
         android:id="@+id/textView2"
