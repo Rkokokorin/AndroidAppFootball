@@ -59,6 +59,7 @@ public class MenuActivity extends AppCompatActivity {
 //                     intent.setClass(MenuActivity.this, AboutActivity.class);
 //////                //запускаем  активность
           startActivity(intent);
+
             }
          }});
     }

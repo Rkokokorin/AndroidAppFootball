@@ -31,7 +31,7 @@
         android:fontFamily="sans-serif-condensed"
         android:lineSpacingExtra="8sp"
         android:onClick="onClickLogin"
-        android:text="Войти"
+        android:text="@string/Sign"
         android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="bold"

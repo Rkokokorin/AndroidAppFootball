@@ -23,7 +23,7 @@ tools:context=".Activities.MenuActivity">
         android:layout_width="match_parent"
         android:layout_height="347dp"
         android:adjustViewBounds="false"
-        android:contentDescription="Do not move"
+        android:contentDescription="@string/do_not_move"
         android:cropToPadding="true"
         app:srcCompat="@drawable/dog" />
 

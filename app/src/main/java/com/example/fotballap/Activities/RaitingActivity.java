@@ -2,6 +2,7 @@ package com.example.fotballap.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.fotballap.R;
 
@@ -11,5 +12,9 @@ public class RaitingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raiting);
+    }
+
+    public void BackClick(View view) {
+
     }
 }

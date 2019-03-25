@@ -8,4 +8,40 @@
     tools:context=".Activities.RaitingActivity">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="415dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:layout_width="395dp"
+        android:layout_height="677dp"
+        android:layout_marginBottom="16dp"
+        android:headerDividersEnabled="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="106dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="84dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true"
+        android:onClick="BackClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981"
+        app:srcCompat="@drawable/back_icon" />
 </android.support.constraint.ConstraintLayout>
