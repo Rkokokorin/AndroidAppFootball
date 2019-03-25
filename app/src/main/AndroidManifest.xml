@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.RaitingActivity"></activity>
+        <activity android:name=".Activities.FindPlayerActivity"></activity>
+        <activity android:name=".Activities.RaitingActivity" />
         <activity android:name=".Activities.MenuActivity" />
         <activity
             android:name=".Activities.dsffds"
