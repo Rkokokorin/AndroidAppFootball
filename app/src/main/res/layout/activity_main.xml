@@ -72,21 +72,27 @@
         android:layout_marginTop="220dp"
         android:background="@drawable/krugliye_ugli"
         android:ems="10"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
         android:inputType="text"
-        android:radius="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
 
     <EditText
+
         android:id="@+id/PasswordId"
         android:layout_width="228dp"
         android:layout_height="35dp"
-
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
         android:layout_marginTop="76dp"
         android:background="@drawable/krugliye_ugli"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/LoginId"
-        app:layout_constraintTop_toBottomOf="@+id/LoginId" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginId"
+        tools:ignore="Autofill"
+        />
 
 </android.support.constraint.ConstraintLayout>
