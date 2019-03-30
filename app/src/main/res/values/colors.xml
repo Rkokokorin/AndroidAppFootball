@@ -7,4 +7,6 @@
     <color name="black_overlay">#66000000</color>
     <color name="lightgreen">#00FA9A</color>
     <color name="LimeGreen">#00FA9A</color>
+    <color name="GreyGreen">#2F4F4F</color>
+    <color name="Gray">#778899</color>
 </resources>
