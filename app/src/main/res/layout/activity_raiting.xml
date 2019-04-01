@@ -8,28 +8,12 @@
     tools:context=".Activities.RaitingActivity">
 
 
-    <ImageView
-        android:id="@+id/back_icon"
-        android:layout_width="94dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:adjustViewBounds="false"
-        android:cropToPadding="true"
-        android:onClick="BackClick"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987"
-        app:srcCompat="@drawable/back_icon" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycleViewRaiting"
         android:layout_width="411dp"
         android:layout_height="600dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,15 +21,32 @@
         app:layout_constraintVertical_bias="1.0">
 
     </android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="94dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true"
+        android:onClick="BackClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back_icon" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="53dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:fontFamily="monospace"
         android:text="№"
+        android:textAllCaps="false"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,11 +54,12 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="131dp"
-        android:layout_height="111dp"
-        android:layout_marginStart="80dp"
+        android:layout_width="111dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
         android:text="Игрок"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,11 +70,11 @@
         android:layout_width="51dp"
         android:layout_height="106dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="4dp"
         android:text="П"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,12 +82,25 @@
         android:id="@+id/textview7"
         android:layout_width="51dp"
         android:layout_height="106dp"
-        android:layout_marginStart="256dp"
+        android:layout_marginStart="300dp"
         android:layout_marginTop="4dp"
         android:text="Г"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="51dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="4dp"
+        android:text="И"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -22,7 +22,7 @@ public class Player extends Person  {
     Player(String name){
         position ="Неизвестна";
         this.name=name;
-
+        Persons.PlayerNameMap.put(this.name,this);
         Persons.Players.add(this);
             }
       public Player(String name, int goals, int games, int ass, int Red_cards, int Yellow_cards, String pos){
@@ -35,6 +35,7 @@ public class Player extends Person  {
                 position =pos;
 
                 Persons.Players.add(this);
+                Persons.PlayerNameMap.put(this.name,this);
                 Persons.PlayersSortedByGoals.add(this);
             }
 

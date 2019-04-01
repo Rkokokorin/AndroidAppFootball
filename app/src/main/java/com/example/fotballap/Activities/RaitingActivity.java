@@ -20,7 +20,7 @@ public class RaitingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Persons.createPlayers();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raiting);
         recyclerViewrating = findViewById(R.id.recycleViewRaiting);

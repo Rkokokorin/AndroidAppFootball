@@ -47,12 +47,14 @@ public class RaitingAdapter extends RecyclerView.Adapter<RaitingAdapter.RaitingV
         TextView nameRaitingItemView;
         TextView goalsRaitingItemView;
         TextView assistsRaitingItemView;
+        TextView gamesRaitingItemView;
         public RaitingViewHolder(@NonNull View itemView) {
             super(itemView);
             nameRaitingItemView =itemView.findViewById(R.id.raiting_name_id);
             numberRaitingItemView =itemView.findViewById(R.id.raiting_pos_id);
             goalsRaitingItemView=itemView.findViewById(R.id.raiting_goals_id);
             assistsRaitingItemView=itemView.findViewById(R.id.raiting_assists_id);
+            gamesRaitingItemView=itemView.findViewById(R.id.raiting_games_id);
 
     }
     void bind(int i){
@@ -69,6 +71,7 @@ public class RaitingAdapter extends RecyclerView.Adapter<RaitingAdapter.RaitingV
           nameRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getName()));
           goalsRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getGoals()));
              assistsRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getAssists()));
+             gamesRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getGames()));
 
 
     }

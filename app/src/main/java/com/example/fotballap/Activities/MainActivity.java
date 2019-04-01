@@ -7,12 +7,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fotballap.Logic.domain.persons.Persons;
 import com.example.fotballap.R;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Persons.createPlayers();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
