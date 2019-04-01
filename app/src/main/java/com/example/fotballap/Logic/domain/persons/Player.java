@@ -1,16 +1,16 @@
 package com.example.fotballap.Logic.domain.persons;
 
 
-import com.example.fotballap.Logic.Raiting;
+
 import com.example.fotballap.Logic.Tournaments.Tournament;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
-public class Player extends Person {
-    int id = Raiting.goals.size();
-    private String position;
+public class Player extends Person  {
+    int id = Persons.Players.size();
+        private String position;
     private int games;
     private int goals;
     private int assists;
@@ -33,8 +33,9 @@ public class Player extends Person {
                 redCards=Red_cards;
                 yellowCards=Yellow_cards;
                 position =pos;
-                Raiting.goals.put(id,goals);
+
                 Persons.Players.add(this);
+                Persons.PlayersSortedByGoals.add(this);
             }
 
     public void setGames(int games) {
@@ -43,7 +44,7 @@ public class Player extends Person {
 
     public void setGoals(int goals) {
         this.goals = goals;
-        Raiting.goals.put(id,goals);
+
         Persons.Players.add(this);
     }
 
@@ -94,5 +95,7 @@ public class Player extends Person {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }
 

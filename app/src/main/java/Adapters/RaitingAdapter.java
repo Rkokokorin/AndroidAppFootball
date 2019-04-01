@@ -8,12 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.fotballap.Logic.Raiting;
+
 import com.example.fotballap.Logic.domain.persons.Person;
 import com.example.fotballap.Logic.domain.persons.Persons;
+import com.example.fotballap.Logic.domain.persons.Player;
 import com.example.fotballap.R;
 
-import static com.example.fotballap.Logic.Raiting.*;
+import java.util.Collections;
+import java.util.Comparator;
+
 
 public class RaitingAdapter extends RecyclerView.Adapter<RaitingAdapter.RaitingViewHolder>{
     private int numbersOfItems;
@@ -53,13 +56,19 @@ public class RaitingAdapter extends RecyclerView.Adapter<RaitingAdapter.RaitingV
 
     }
     void bind(int i){
+        Collections.sort(Persons.PlayersSortedByGoals, new Comparator<Player>() {
+            @Override
+            public int compare(Player o1, Player o2) {
+                if (o2.getGoals()==(o1.getGoals())){return o2.getAssists()-o1.getAssists();}
+                return (o2.getGoals()-o1.getGoals());
+            }
+        });
 
 
-            i++;
-            numberRaitingItemView.setText(String.valueOf(i));
-          nameRaitingItemView.setText(String.valueOf(Persons.Players.get(i-1).getName()));
-            goalsRaitingItemView.setText(String.valueOf(Persons.Players.get(i-1).getGoals()));
-       assistsRaitingItemView.setText(String.valueOf(Persons.Players.get(i-1).getAssists()));
+            numberRaitingItemView.setText(String.valueOf(i+1));
+          nameRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getName()));
+          goalsRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getGoals()));
+             assistsRaitingItemView.setText(String.valueOf(Persons.PlayersSortedByGoals.get(i).getAssists()));
 
 
     }

@@ -20,11 +20,7 @@ public class RaitingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Player player = new Player("АлександрКержаков",4,4,5,0,5,"Нападающий");
-        Player player2 = new Player("АлександрКокорин",8,4,0,0,0,"Защитник");
-        Player player3 = new Player("Александр Петров",4,4,5,0,2,"Полузащитник");
-        Player player4 = new Player("Антоn Кержаков",4,4,5,1,0,"Нападающий");
-        Player player5 = new Player("Роман Kокорин",20,4,5,0,1,"Нападающий");
+        Persons.createPlayers();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raiting);
         recyclerViewrating = findViewById(R.id.recycleViewRaiting);
@@ -32,7 +28,7 @@ public class RaitingActivity extends AppCompatActivity {
         recyclerViewrating.setLayoutManager(layoutManagerRaiting);
         raitingAdapter = new RaitingAdapter(Persons.Players.size());
         recyclerViewrating.setAdapter(raitingAdapter);
-//      recyclerViewrating.setHasFixedSize(true);
+      recyclerViewrating.setHasFixedSize(true);
 
 
 
