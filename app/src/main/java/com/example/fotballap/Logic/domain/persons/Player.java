@@ -16,17 +16,17 @@ public class Player extends Person {
     private int assists;
     private int yellowCards;
     private int redCards;
-    Map<String,Integer> statistic = new HashMap<>();
+    private String name;
 
-    Player(String name, String surname){
-              position ="Неизвестна";
-        name=this.name;
-        surname = this.surname;
+
+    Player(String name){
+        position ="Неизвестна";
+        this.name=name;
+
         Persons.Players.add(this);
             }
-      public Player(String name, String surname, int goals, int games, int ass, int Red_cards, int Yellow_cards, String pos){
+      public Player(String name, int goals, int games, int ass, int Red_cards, int Yellow_cards, String pos){
                 this.name= name;
-                this.surname=surname;
                 this.goals=goals;
                 this.games=games;
                 assists=ass;
@@ -85,6 +85,14 @@ public class Player extends Person {
 
     public int getAssists() {
         return assists;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 
