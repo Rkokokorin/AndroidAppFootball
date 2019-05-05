@@ -30,8 +30,7 @@ public class RaitingAdapter extends RecyclerView.Adapter<RaitingAdapter.RaitingV
         int layoutIdForListItem=R.layout.raitingelementlayout;
         LayoutInflater inflater =LayoutInflater.from(context);
         View view = inflater.inflate(layoutIdForListItem,parent,false);
-        RaitingViewHolder raitingViewHolder = new RaitingViewHolder(view);
-        return raitingViewHolder;
+        return new RaitingViewHolder(view);
     }
     @Override
     public void onBindViewHolder(@NonNull RaitingViewHolder raitingViewHolder, int i) {

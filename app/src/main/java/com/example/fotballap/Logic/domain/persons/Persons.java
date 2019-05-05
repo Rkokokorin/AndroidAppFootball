@@ -26,7 +26,7 @@ public  static void  createPlayers(){
     Player player2 = new Player("Александр Кокорин",4,20,0,0,0,"Защитник");
     Player player3 = new Player("Арсений Порядин",3,20,5,0,2,"Полузащитник");
     Player player4 = new Player("Лионель Месси",2,20,5,1,0,"Нападающий");
-    Player player5 = new Player("Роман Kокорин",20,20,5,0,1,"Нападающий");
+    Player player5 = new Player("Роман Кокорин",20,20,5,0,1,"Нападающий");
     Player playher = new Player("Виктор Хрулев",19,4,5,0,5,"Нападающий");
     Player playery = new Player("Хавьер Дзанетти",3,18,0,0,0,"Защитник");
     Player playekjr3 = new Player("Низовцев Иван",4,17,5,0,2,"Полузащитник");

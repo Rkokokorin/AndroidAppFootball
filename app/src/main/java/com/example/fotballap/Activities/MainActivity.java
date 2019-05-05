@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fotballap.Logic.domain.persons.Persons;
+import com.example.fotballap.Logic.domain.teams.Teams;
 import com.example.fotballap.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Persons.createPlayers();
+        Teams.createTeams();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

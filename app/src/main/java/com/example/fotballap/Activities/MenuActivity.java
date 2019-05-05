@@ -16,11 +16,12 @@ public class MenuActivity extends AppCompatActivity {
 
     //Создаем массив разделов:
     private String titles[] = {
-            "Поиск игрока",
-            " Создать турнир",
-            " Рейтинг",
+            " Поиск игрока",
+//            " Создать турнир",
+            " Турнирная таблица",
+            " Рейтинг Игроков",
             " Добавить игрока",
-            " Найти команду",
+            " Поиск команды",
             " Ближайшие матчи",
             " Об авторе",
 
@@ -28,7 +29,7 @@ public class MenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
@@ -48,8 +49,9 @@ public class MenuActivity extends AppCompatActivity {
              case 0:{
                     intent.setClass(MenuActivity.this, FindPlayerActivity.class);
                     break;}
-                    // case 1:
-//                     intent.setClass(MenuActivity.this, CreateTournamentActivity.class);
+                    case 1:
+                    intent.setClass(MenuActivity.this, TournamentTableActivity.class);
+                    break;
                 case 2: {
                     intent.setClass(MenuActivity.this, RaitingActivity.class);
                     break;

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/table_pos_id"
+        android:layout_width="32dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/table_name_id"
+        android:layout_width="158dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/table_loses_id"
+        android:layout_width="33dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="376dp"
+        android:layout_marginTop="12dp"
+
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/table_draws_id"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="336dp"
+
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/table_wins_id"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="292dp"
+
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/table_games_id"
+
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="204dp"
+
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/table_points_id"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="248dp"
+
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

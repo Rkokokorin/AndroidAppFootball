@@ -12,12 +12,14 @@ android:background="@color/colorPrimary"
 
     <ListView
         android:id="@+id/listView"
+        style="@android:style/Widget.DeviceDefault.Light.ListView"
         android:layout_width="wrap_content"
         android:layout_height="336dp"
         android:footerDividersEnabled="true"
         android:headerDividersEnabled="true"
         android:scrollbars="horizontal"
-        android:textSize="27sp"
+        android:textSize="45sp"
+        android:typeface="normal"
         android:textStyle="bold" />
 
 </LinearLayout>
