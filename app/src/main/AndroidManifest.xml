@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.TournamentTableActivity" />
+        <activity android:name=".Activities.AboutActivity" />
     </application>
 
 </manifest>

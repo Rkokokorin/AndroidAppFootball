@@ -14,27 +14,15 @@ import com.example.fotballap.Logic.domain.persons.Person;
 import com.example.fotballap.Logic.domain.persons.Persons;
 import com.example.fotballap.R;
 
-public class FindPlayerActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
 
 
-       @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_player);
-
-    }
-    public void BackClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.about_activity);
 
     }
 
-    public void FindPlayer(View view) {
-        if (Persons.PlayerNameMap.containsKey(((EditText)findViewById(R.id.nameId)).getText().toString()))
-        {Toast.makeText(this,"Игрок найден", Toast.LENGTH_SHORT).show();}
-        else Toast.makeText(this,"Такого игрока нет!", Toast.LENGTH_SHORT).show();
-
-
-    }
 }
