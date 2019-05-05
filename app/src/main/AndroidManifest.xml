@@ -26,6 +26,7 @@
         </activity>
         <activity android:name=".Activities.TournamentTableActivity" />
         <activity android:name=".Activities.AboutActivity" />
+        <activity android:name=".Activities.PlayerActivity" />
     </application>
 
 </manifest>

@@ -10,13 +10,19 @@ import java.util.Map;
 
 public class Player extends Person  {
     int id = Persons.Players.size();
-        private String position;
-    private int games;
-    private int goals;
-    private int assists;
-    private int yellowCards;
-    private int redCards;
-    private String name;
+    private String position;
+
+    public String getTeam() {
+        return team;
+    }
+
+    private String team;
+    private int games ;
+    private int goals ;
+    private int assists ;
+    private int yellowCards  ;
+    private int redCards ;
+    private String name ;
 
 
     Player(String name){
@@ -28,12 +34,12 @@ public class Player extends Person  {
       public Player(String name, int goals, int games, int ass, int Red_cards, int Yellow_cards, String pos){
                 this.name= name;
                 this.goals=goals;
+                team= "Фк Зенит";
                 this.games=games;
                 assists=ass;
                 redCards=Red_cards;
                 yellowCards=Yellow_cards;
                 position =pos;
-
                 Persons.Players.add(this);
                 Persons.PlayerNameMap.put(this.name,this);
                 Persons.PlayersSortedByGoals.add(this);

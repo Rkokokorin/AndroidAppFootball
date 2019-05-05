@@ -29,10 +29,15 @@ public class FindPlayerActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
+static  public  String name;
     public void FindPlayer(View view) {
-        if (Persons.PlayerNameMap.containsKey(((EditText)findViewById(R.id.nameId)).getText().toString()))
-        {Toast.makeText(this,"Игрок найден", Toast.LENGTH_SHORT).show();}
+        if (Persons.PlayerNameMap.containsKey((( EditText)findViewById(R.id.nameId)).getText().toString()))
+        { name=((EditText)findViewById(R.id.nameId)).getText().toString();
+
+            Intent intent = new Intent(getApplicationContext(),PlayerActivity.class);
+
+            startActivity(intent);
+            }
         else Toast.makeText(this,"Такого игрока нет!", Toast.LENGTH_SHORT).show();
 
 
