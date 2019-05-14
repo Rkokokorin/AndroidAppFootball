@@ -17,6 +17,8 @@ public class Team {
     private int wins;
     private int  draws;
     private int points;
+    private String captain;
+    private String pathtologo;
 
     public int getGames() {
         return games;
@@ -28,7 +30,7 @@ public class Team {
         return points;
     }
 
-    public Team(String name , int wins, int draws, int loses, int goals, int inGoals) {
+    public Team(String name , int wins, int draws, int loses, int goals, int inGoals,  String captain) {
         id = Teams.sortedTeams.size();
         this.name = name;
         this.loses = loses;
@@ -37,7 +39,9 @@ public class Team {
         this.wins = wins;
         this.draws = draws;
         this.games = wins+ draws + loses;
+        this.captain = captain;
         points =wins*3+draws;
+        Teams.TeamMap.put(this.name,this);
         Teams.sortedTeams.add(this);
     }
 
@@ -88,5 +92,21 @@ public class Team {
 
     public void setDraws(int draws) {
         this.draws = draws;
+    }
+
+    public String getCaptain() {
+        return captain;
+    }
+
+    public void setCaptain(String captain) {
+        this.captain = captain;
+    }
+
+    public String getPathtologo() {
+        return pathtologo;
+    }
+
+    public void setPathtologo(String pathtologo) {
+        this.pathtologo = pathtologo;
     }
 }

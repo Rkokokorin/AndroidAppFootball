@@ -1,7 +1,11 @@
 package com.example.fotballap.Activities;
 
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.fotballap.Logic.domain.persons.Person;
@@ -19,6 +23,13 @@ public class PlayerActivity extends AppCompatActivity {
         setContentView(R.layout.findplayer_dialog);
        Player player = Persons.PlayerNameMap.get(FindPlayerActivity.name);
       TextView nametextview = findViewById(R.id.name);
+        ImageView imageView = (ImageView)findViewById(R.id.imageView);
+      if (player.getName().equals("Халк")){
+
+        imageView.setImageResource(R.drawable.hulk);}
+        else
+            imageView.setImageResource(R.drawable.playerdefault);
+
 //       TextView surnametextview = findViewById(R.id.surname);
         TextView gamestextview = findViewById(R.id.playergames);
         TextView teamtextview = findViewById(R.id.team);
@@ -38,5 +49,9 @@ goalstextview.setText(String.valueOf(player.getGoals()));
     gamestextview.setText(String.valueOf(player.getGames()));
 //}
     }
+    public void BackClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+        startActivity(intent);}
 
-}
+
+    }

@@ -20,7 +20,7 @@ public class MenuActivity extends AppCompatActivity {
 //            " Создать турнир",
             " Турнирная таблица",
             " Рейтинг Игроков",
-            " Добавить игрока",
+//            " Добавить игрока",
             " Поиск команды",
             " Ближайшие матчи",
             " О программе ",
@@ -56,13 +56,15 @@ public class MenuActivity extends AppCompatActivity {
                     intent.setClass(MenuActivity.this, RaitingActivity.class);
                     break;
                 }
-//                 case 3:
-//                     intent.setClass(MenuActivity.this, AddPlayerActivity.class);
+              case 3: {
+                  intent.setClass(MenuActivity.this, FindTeamActivity.class);
+                break;
+              }
 //                 case 4:
 //                     intent.setClass(MenuActivity.this, FindTeamActivity.class);
 //                 case 5:
 //                     intent.setClass(MenuActivity.this, SheduleActivity.class);
-             case 6: {
+             case 5: {
                  intent.setClass(MenuActivity.this, AboutActivity.class);
                  break;
 //////                //запускаем  активность
