@@ -1,13 +1,6 @@
 package com.example.fotballap.Logic.domain.persons;
 
 
-
-import com.example.fotballap.Logic.Tournaments.Tournament;
-
-import java.util.HashMap;
-import java.util.Map;
-
-
 public class Player extends Person  {
     int id = Persons.Players.size();
     private String position;

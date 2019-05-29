@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:background="@color/ligtGray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ligtGray"
     tools:context=".Activities.MenuActivity">
-<!--android:background="@drawable/back2"-->
+    <!--android:background="@drawable/back2"-->
 
 
     <ListView
         android:id="@+id/listView"
         style="@android:style/Widget.DeviceDefault.Light.ListView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="336dp"
         android:footerDividersEnabled="true"
         android:headerDividersEnabled="true"
         android:scrollbars="horizontal"
         android:textSize="45sp"
-        android:typeface="normal"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="normal" />
 
 </LinearLayout>

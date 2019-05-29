@@ -43,6 +43,22 @@ public class Team {
         points =wins*3+draws;
         Teams.TeamMap.put(this.name,this);
         Teams.sortedTeams.add(this);
+        pathtologo ="defaultlogo";
+    }
+    public Team(String name , int wins, int draws, int loses, int goals, int inGoals,  String captain,String pathtologo) {
+        id = Teams.sortedTeams.size();
+        this.name = name;
+        this.loses = loses;
+        this.goals = goals;
+        this.inGoals = inGoals;
+        this.wins = wins;
+        this.draws = draws;
+        this.games = wins+ draws + loses;
+        this.captain = captain;
+        points =wins*3+draws;
+        Teams.TeamMap.put(this.name,this);
+        Teams.sortedTeams.add(this);
+        this.pathtologo =pathtologo;
     }
 
 

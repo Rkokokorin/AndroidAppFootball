@@ -42,6 +42,7 @@
 
         android:fontFamily="monospace"
         android:text="TextView"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,6 +54,7 @@
         android:layout_marginStart="312dp"
 
         android:fontFamily="monospace"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -64,6 +66,7 @@
         android:layout_marginStart="260dp"
 
         android:fontFamily="monospace"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

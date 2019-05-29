@@ -22,8 +22,8 @@ public class MenuActivity extends AppCompatActivity {
             " Рейтинг Игроков",
 //            " Добавить игрока",
             " Поиск команды",
-            " Ближайшие матчи",
-            " О программе ",
+            " Календарь матчей",
+            " О программе "
 
     };
 
@@ -60,9 +60,10 @@ public class MenuActivity extends AppCompatActivity {
                   intent.setClass(MenuActivity.this, FindTeamActivity.class);
                 break;
               }
-//                 case 4:
-//                     intent.setClass(MenuActivity.this, FindTeamActivity.class);
-//                 case 5:
+           case 4: {
+               intent.setClass(MenuActivity.this, SheduleActivity.class);
+           break;}
+// case 5:
 //                     intent.setClass(MenuActivity.this, SheduleActivity.class);
              case 5: {
                  intent.setClass(MenuActivity.this, AboutActivity.class);

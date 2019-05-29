@@ -11,10 +11,10 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="197dp"
+        android:layout_width="181dp"
         android:layout_height="219dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -190,8 +190,8 @@
 
     <TextView
         android:id="@+id/teamcaptain"
-        android:layout_width="174dp"
-        android:layout_height="36dp"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="184dp"
         android:text="TextView"

@@ -3,6 +3,9 @@ package com.example.fotballap.Activities;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,16 +24,14 @@ public class TeamActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.findteam_dialog);
        Team team = Teams.TeamMap.get(FindTeamActivity.name);
       TextView nametextview = findViewById(R.id.teamname);
         ImageView imageView = (ImageView)findViewById(R.id.logo);
-//        Resources resources = this.getContext.getResources();
-//        //paramText is name of your drawable
-//        final int resourceId = resources.getIdentifier(paramText, "mipmap",
-//                context.getPackageName());
-//        ImageView imageview= (ImageView)findViewById(R.id.imageView);
-//        imageview.setImageResource(resourceId);
+
 
 //
         TextView teamplacetextview = findViewById(R.id.teamplace);
@@ -41,7 +42,11 @@ public class TeamActivity extends AppCompatActivity {
         TextView goaldiftextview = findViewById(R.id.teamgoaldiff);
         TextView winstextview = findViewById(R.id.teamwins);
         TextView tablepointsview = findViewById(R.id.teamtablepos);
+
 //if (player!= null) {
+        Resources resources = getApplicationContext().getResources();
+        int resourceId = resources.getIdentifier(team.getPathtologo(), "drawable", getApplicationContext().getPackageName());
+        imageView.setImageResource(resourceId);
    nametextview.setText(team.getName());
    teamplacetextview.setText(String.valueOf(Teams.sortedTeams.indexOf(team)+1));
    tablepointsview.setText(String.valueOf(team.getWins()*3+team.getDraws()));
